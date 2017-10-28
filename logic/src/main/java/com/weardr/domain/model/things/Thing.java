@@ -1,5 +1,7 @@
 package com.weardr.domain.model.things;
 
+import com.weardr.domain.model.catalog.Category;
+import com.weardr.domain.model.catalog.Price;
 import com.weardr.domain.model.catalog.ThingId;
 import com.weardr.domain.model.clients.Seller;
 
@@ -9,8 +11,11 @@ public abstract class Thing implements Sellable {
 
     ThingId id;
     String title;
-    Seller seller;
     Collection<Photo> photos;
+    Seller seller;
+    Price price;
+
+    Category category;
 
     public ThingId id() {
         return id;
@@ -20,11 +25,19 @@ public abstract class Thing implements Sellable {
         return title;
     }
 
+    public Collection<Photo> photos() {
+        return photos;
+    }
+
+    public Category category() {
+        return category;
+    }
+
     public Seller seller() {
         return seller;
     }
 
-    public Collection<Photo> photos() {
-        return photos;
+    public Price price() {
+        return price;
     }
 }

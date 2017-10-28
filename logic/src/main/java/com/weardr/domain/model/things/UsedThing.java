@@ -1,5 +1,7 @@
 package com.weardr.domain.model.things;
 
+import com.weardr.domain.model.catalog.Category;
+import com.weardr.domain.model.catalog.Price;
 import com.weardr.domain.model.catalog.ThingId;
 import com.weardr.domain.model.clients.Seller;
 
@@ -13,31 +15,34 @@ public class UsedThing extends Thing {
     }
 
     private UsedThing(Builder builder) {
-        this.title = builder.title;
+        this.id = builder.id;
         this.seller = builder.seller;
+        this.title = builder.title;
+        this.photos = builder.photos;
         this.condition = builder.condition;
+        this.category = builder.category;
+        this.price = builder.price;
     }
 
     public static class Builder {
 
         private ThingId id;
+        private Seller seller;
         private String title;
         private Collection<Photo> photos;
-        private Seller seller;
         private Condition condition;
+        private Category category;
+        private Price price;
 
 
-        public Builder(ThingId id) {
+        public Builder(ThingId id, Seller seller) {
             this.id = id;
         }
 
-        public Builder fromSeller(Seller seller) {
-            this.seller = seller;
-            return this;
-        }
-
-        public Builder title(String title) {
+        public Builder withDescription(String title, Condition condition, Category category) {
             this.title = title;
+            this.condition = condition;
+            this.category = category;
             return this;
         }
 
@@ -46,8 +51,8 @@ public class UsedThing extends Thing {
             return this;
         }
 
-        public Builder inCondition(Condition condition) {
-            this.condition = condition;
+        public Builder withPrice(Price price) {
+            this.price = price;
             return this;
         }
 
