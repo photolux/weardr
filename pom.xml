@@ -6,8 +6,8 @@
     <artifactId>bundle</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <modules>
-        <module>shop</module>
-        <module>domainlogic</module>
+        <module>logic</module>
+        <module>site</module>
     </modules>
     <packaging>pom</packaging>
 </project>
