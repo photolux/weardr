@@ -1,4 +1,4 @@
-package com.weardr.interfaces.dto;
+package com.weardr.application.dto;
 
 public class CategoryDTO {
     private long id;
