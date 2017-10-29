@@ -1,6 +1,4 @@
-package com.weardr.domain.model.things;
-
-import com.weardr.domain.model.catalog.ThingId;
+package com.weardr.domain.model.thing;
 
 public interface ThingRepository {
 

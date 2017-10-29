@@ -1,7 +1,7 @@
 package com.weardr.application;
 
 import com.weardr.domain.model.catalog.Category;
-import com.weardr.domain.model.things.Thing;
+import com.weardr.domain.model.thing.Thing;
 
 public class BuyerService {
 

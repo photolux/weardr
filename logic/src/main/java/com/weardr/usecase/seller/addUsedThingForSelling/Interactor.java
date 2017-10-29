@@ -1,19 +1,21 @@
-package com.weardr.application;
+package com.weardr.usecase.seller.addUsedThingForSelling;
 
 import com.weardr.domain.model.catalog.Category;
 import com.weardr.domain.model.catalog.Price;
-import com.weardr.domain.model.catalog.ThingId;
-import com.weardr.domain.model.clients.Seller;
-import com.weardr.domain.model.things.Condition;
-import com.weardr.domain.model.things.ThingRepository;
-import com.weardr.domain.model.things.UsedThing;
+import com.weardr.domain.model.client.Seller;
+import com.weardr.domain.model.thing.Condition;
+import com.weardr.domain.model.thing.ThingId;
+import com.weardr.domain.model.thing.ThingRepository;
+import com.weardr.domain.model.thing.UsedThing;
 
-public class SellerService {
+public class Interactor implements InputBoundary {
 
     private ThingRepository thingRepository;
+    private OutputBoundary output;
 
-    public SellerService(ThingRepository thingRepository) {
+    public Interactor(ThingRepository thingRepository, OutputBoundary output) {
         this.thingRepository = thingRepository;
+        this.output = output;
     }
 
     public void addUsedThingForSelling(String title, Category category, Condition condition, Price price, Seller seller) {
@@ -27,6 +29,6 @@ public class SellerService {
 
         thingRepository.store(thing);
 
+        output.send(thingId);
     }
-
 }
