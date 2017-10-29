@@ -12,13 +12,14 @@ import com.weardr.domain.model.thing.UsedThing;
 public class Interactor implements InputBoundary {
 
     private ThingRepository thingRepository;
+
     private OutputBoundary output;
 
-    SellerMapper sellerMapper;
-    ConditionMapper conditionMapper;
-    PriceMapper priceMapper;
-    CategoryMapper categoryMapper;
-    ThingMapper thingMapper;
+    private SellerMapper sellerMapper;
+    private ConditionMapper conditionMapper;
+    private PriceMapper priceMapper;
+    private CategoryMapper categoryMapper;
+    private ThingMapper thingMapper;
 
     public Interactor(ThingRepository thingRepository, OutputBoundary output) {
         this.thingRepository = thingRepository;
