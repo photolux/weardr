@@ -1,4 +1,4 @@
-package com.weardr.domain.model.catalog;
+package com.weardr.domain.model.thing;
 
 public class Category {
 

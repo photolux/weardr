@@ -1,6 +1,6 @@
 package com.weardr.application.mappers;
 
-import com.weardr.application.dto.SellerDTO;
+import com.weardr.application.model.SellerDTO;
 import com.weardr.domain.model.client.Seller;
 
 public class SellerMapper implements Mapper<SellerDTO, Seller> {

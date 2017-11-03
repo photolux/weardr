@@ -1,7 +1,6 @@
 package com.weardr.domain.model.thing;
 
-import com.weardr.domain.model.catalog.Category;
-import com.weardr.domain.model.catalog.Price;
+import com.weardr.domain.model.shop.Price;
 import com.weardr.domain.model.client.Seller;
 
 import java.util.Collection;

@@ -1,14 +1,13 @@
 package com.weardr.application.mappers;
 
-import com.weardr.application.dto.ThingDTO;
-import com.weardr.domain.model.thing.Thing;
+import com.weardr.application.model.Thing;
 
-public class ThingMapper implements Mapper<ThingDTO, Thing> {
-    public ThingDTO toDTO(Thing entity) {
+public class ThingMapper implements Mapper<Thing, com.weardr.domain.model.thing.Thing> {
+    public Thing toDTO(com.weardr.domain.model.thing.Thing entity) {
         return null;
     }
 
-    public Thing fromDTO(ThingDTO dto) {
+    public com.weardr.domain.model.thing.Thing fromDTO(Thing dto) {
         return null;
     }
 }
