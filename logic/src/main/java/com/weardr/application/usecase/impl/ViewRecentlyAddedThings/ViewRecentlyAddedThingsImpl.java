@@ -4,6 +4,7 @@ import com.weardr.application.usecase.ViewRecentlyAddedThings.ViewRecentlyAddedT
 import com.weardr.domain.model.thing.Thing;
 import com.weardr.domain.model.thing.ThingRepository;
 
+import java.util.Optional;
 import java.util.Set;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
@@ -17,7 +18,7 @@ public class ViewRecentlyAddedThingsImpl implements ViewRecentlyAddedThings {
     }
 
     @Override
-    public void execute(Supplier input, Consumer output) {
+    public void execute(Supplier<Optional<?>> input, Consumer<Thing> output) {
         Set<Thing> recentlyAddedThings = thingRepository.getRecentlyAdded();
         recentlyAddedThings.stream().forEach(output);
     }
