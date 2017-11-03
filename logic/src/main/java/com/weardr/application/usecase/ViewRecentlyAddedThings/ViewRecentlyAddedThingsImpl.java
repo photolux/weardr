@@ -1,4 +1,4 @@
-package com.weardr.application.usecase.impl.ViewRecentlyAddedThings;
+package com.weardr.application.usecase.ViewRecentlyAddedThings;
 
 import com.weardr.application.usecase.ViewRecentlyAddedThings.ViewRecentlyAddedThings;
 import com.weardr.domain.model.thing.Thing;

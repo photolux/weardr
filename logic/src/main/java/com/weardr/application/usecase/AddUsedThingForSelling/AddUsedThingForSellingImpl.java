@@ -1,4 +1,4 @@
-package com.weardr.application.usecase.impl.AddUsedThingForSelling;
+package com.weardr.application.usecase.AddUsedThingForSelling;
 
 import com.weardr.application.usecase.AddUsedThingForSelling.AddUsedThingForSelling;
 import com.weardr.application.usecase.AddUsedThingForSelling.UsedThingProvidedDetails;
