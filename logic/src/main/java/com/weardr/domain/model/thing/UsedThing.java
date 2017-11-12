@@ -35,6 +35,7 @@ public class UsedThing extends Thing {
 
         public Builder(ThingId id, Seller seller) {
             this.id = id;
+            this.seller = seller;
         }
 
         public Builder withDescription(String title, Condition condition, Category category) {

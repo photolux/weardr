@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface ThingRepository {
 
-    List<Thing> getRecentlyAdded();
+    List<UsedThing> getRecentlyAdded();
 
     ThingId nextThingId();
 
