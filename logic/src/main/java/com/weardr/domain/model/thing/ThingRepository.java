@@ -1,10 +1,10 @@
 package com.weardr.domain.model.thing;
 
-import java.util.Set;
+import java.util.List;
 
 public interface ThingRepository {
 
-    Set<Thing> getRecentlyAdded();
+    List<Thing> getRecentlyAdded();
 
     ThingId nextThingId();
 

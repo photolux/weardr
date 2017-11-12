@@ -1,5 +1,5 @@
 package com.weardr.application.usecase.AddUsedThingForSelling;
 
-public class UsedThingProvidedDetails {
+public class ProvidedDetails {
 
 }
