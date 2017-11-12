@@ -11,5 +11,12 @@
 
     <artifactId>site</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.weardr</groupId>
+            <artifactId>logic</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
